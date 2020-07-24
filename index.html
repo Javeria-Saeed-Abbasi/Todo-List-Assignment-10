@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--CUSTOM js -->
+    <script src="js/app.js" rel="text/javascript"></script>
+    <!--CUSTOM css -->
+    <script src="css/style.css" rel="stylesheet"></script>
+    <!-- Boostrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>TO do App</title>
+</head>
+<body>
+    <div class="container bg-dark text-center"><span class="h1 text-white">TO DO</span> <span class="h1 text-success">List</span>
+    </br>
+</br>
+
+        <!-- Search form -->
+        <form class="container" id="myDIV">
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-md-6">
+                        <div class="input-group mx-auto mb-3">
+                            <div class="input-group-prepend">
+                                    <button class="btn btn-danger" onclick="deleteAll()"><i class="fas fa-trash-alt" aria-hidden="true"></i> DELETE ALL</button>   
+                            </div>
+                            <input id="myInput" class="border border-success rounded-lg form-control form-control-lg ml-3 w-50 "  type="text" placeholder="Make your list now"
+                            aria-label="Search"> &nbsp;&nbsp;&nbsp;
+                            <div class="input-group-append">
+                                    <button class="btn btn-success btn-rounded" onclick="inputItem()" class="addBtn" ><i class="fas fa-plus" aria-hidden="true"></i></button>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    </br>
+</br>
+
+    <!----lists---->
+    <div class="container" class="btn-container">
+            <div class="row justify-content-md-center" class="item">
+              <div class="col col-lg-6">
+                    <ul class=" border-bottom border-top border-success list-group list-group-flush" id="myUL">
+                             <!-- <li class="list-group-item bg-dark text-white item-input" > -->
+                                    <!-- <input type="checkbox"/>
+                                Apple
+                                    <div class="btn-group float-right " role="group" aria-label="Basic example">
+                                    
+                                            <button type="button" class="btn btn-danger" class="deleteBtn"><i class="fas fa-trash-alt"></i>&nbsp; Delete</button> &nbsp;&nbsp;
+                                            <button type="button" class="btn btn-success" class="editBtn"><i class="fas fa-edit"></i>Edit</button>
+                                          </div>     -->
+                            <!-- </li> -->
+                           
+                          </ul>
+              </div>
+              </div>
+              <br/></br>
+    <!-----main container ends--------------->
+    </div>
+</body>
+</html>
